@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Billing</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+</head>
+<body>
+    <center>
+    <h1>  Grocery Shop Billing</h1>
+    
+    <h2>Select items and quantity to purchase:</h2>
+    <form id="billingForm">
+        <label>
+            <input type="checkbox" name="item" value="Rice"> Rice - $90
+            <input type="number" name="quantity" value="0" min="0">
+        </label><br>
+        <label>
+            <input type="checkbox" name="item" value="Sugar"> Sugar - $50
+            <input type="number" name="quantity" value="0" min="0">
+        </label><br>
+        <label>
+            <input type="checkbox" name="item" value="Milk"> Milk - $70
+            <input type="number" name="quantity" value="0" min="0">
+        </label><br>
+        <label>
+            <input type="checkbox" name="item" value="oil"> Oil - $110
+            <input type="number" name="quantity" value="0" min="0">
+        </label><br>
+        <label>
+            <input type="checkbox" name="item" value="Apples"> Apples - $90
+            <input type="number" name="quantity" value="0" min="0">
+        </label><br>
+    </form>
+<br> <br>
+    <div class="btn-container">
+        <button class="btn btn-primary" onclick="cal()">Calculate Bill</button>
+        <button class="btn btn-primary" onclick="printBill()">Print Bill</button>
+    </div>
+
+    <h2>Selected Items and Quantity Bill:</h2>
+    <table id="billingTable">
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+        <th>
+            <tr>
+                <th colspan="3">Total</th>
+                <th id="totalamt">$0</th>
+            </tr>
+        </th>
+    </table>
+        </center>
+</body>
+</html>
